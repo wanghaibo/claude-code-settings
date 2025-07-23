@@ -11,17 +11,8 @@ mv ~/.claude ~/.claude.bak
 # Clone the claude-code-settings
 git clone https://github.com/feiskyer/claude-code-settings.git ~/.claude
 
-# Install the GitHub Copilot API proxy
-npm install -g copilot-api
-
-# Authorize your GitHub Copilot account
-copilot-api auth
-
-# For convenience, run copilot-api in background with tmux
-tmux new-session -d -s copilot 'copilot-api start'
 ```
 
-> **Note:** This configuration uses GitHub Copilot as the Claude Code model provider through the [copilot-api](https://github.com/ericc-ch/copilot-api) proxy.
 
 ## Commands
 
